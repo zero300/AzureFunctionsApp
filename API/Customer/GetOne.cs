@@ -20,7 +20,7 @@ namespace Prodcuct.Function
             // 測試用ROWGUID : "03e9273e-b193-448e-9823-fe0c44aeed78"
             _logger.LogInformation("GetOne API");
             var response = req.CreateResponse(HttpStatusCode.OK);
-            await response.WriteAsJsonAsync(_demoDbContext.Customers.Where(customer => customer.rowguid == Guid.Parse(rowguid) ));
+            await response.WriteAsJsonAsync( await _demoDbContext.Customers.SingleAsync(customer => customer.rowguid == Guid.Parse(rowguid) ));
 
             return response;
         }

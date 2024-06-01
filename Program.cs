@@ -11,7 +11,10 @@ var host = new HostBuilder()
         services.ConfigureFunctionsApplicationInsights();
     })
     .ConfigureServices((host, services) =>{
-        services.AddDbContext<DemoDbContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("SqlConnectionString")));
+        services.AddDbContext<DemoDbContext>(
+            options => options.UseSqlServer(Environment.GetEnvironmentVariable("SqlConnectionString")),
+            ServiceLifetime.Singleton
+        );
     })
     .Build();
 

@@ -1,0 +1,17 @@
+{
+    "CustomerID" : null,
+    "NameStyle" : false,
+    "Title" : "Mr.",
+    "FirstName" : "King",
+    "MiddleName" : "K.",
+    "LastName" : "Kong",
+    "Suffix" :null,
+    "CompanyName":"Rural Cycle Emporium",
+    "SalesPerson":"adventure-works\\josé1",
+    "EmailAddress":"Kong@adventure-works.com",
+    "Phone":"150-555-0127",
+    "PasswordHash" : "Qa3aMCxNbVLGrc0b99KsbQqiVgwYDfHcsK9GZSUxcTM=",
+    "PasswordSalt": "Ls05W3g=",
+    "rowguid" : null,
+    "ModifiedDate" : null
+  }
